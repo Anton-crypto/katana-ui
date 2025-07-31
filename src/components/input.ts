@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { property, state } from 'lit/decorators.js';
 
-export class UInput extends LitElement {
+export class KInput extends LitElement {
   @property({ type: String }) label = '';
   @property({ type: String }) value = '';
   @property({ type: String }) name = '';
@@ -125,10 +125,10 @@ export class UInput extends LitElement {
   }
 }
 
-customElements.define('u-input', UInput);
+customElements.define('k-input', KInput);
 
 declare global {
   interface HTMLElementTagNameMap {
-    'u-input': UInput;
+    'k-input': KInput;
   }
 }

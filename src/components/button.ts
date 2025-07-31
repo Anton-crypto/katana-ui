@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { property } from 'lit/decorators.js';
 
-export class UButton extends LitElement {
+export class KButton extends LitElement {
   @property({ type: String }) variant: 'primary' | 'secondary' | 'danger' | 'outline' = 'primary';
   @property({ type: Boolean }) disabled = false;
   @property({ type: Boolean }) loading = false;
@@ -72,10 +72,10 @@ export class UButton extends LitElement {
   }
 }
 
-customElements.define('u-button', UButton);
+customElements.define('k-button', KButton);
 
 declare global {
   interface HTMLElementTagNameMap {
-    'u-button': UButton;
+    'k-button': KButton;
   }
 }

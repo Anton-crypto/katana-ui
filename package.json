@@ -1,5 +1,8 @@
 {
-  "name": "@ui-kit/core",
+  "name": "@anton-crypto/katana-ui",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.1",
   "description": "",
   "main": "dist/ui-kit.js",
@@ -22,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Anton-crypto/ui-kit"
+    "url": "git+https://github.com/Anton-crypto/ui-kit.git"
   },
   "homepage": "",
   "scripts": {
