@@ -34,6 +34,7 @@ export class KInput extends LitElement {
     }
 
     .input {
+      box-sizing: border-box;
       width: 100%;
       padding: 12px 16px;
       border: 1px solid var(--fitness-color-border, #d1d5db);
