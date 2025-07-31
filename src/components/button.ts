@@ -72,10 +72,10 @@ export class UButton extends LitElement {
   }
 }
 
-customElements.define('fitness-button', FitnessButton);
+customElements.define('u-button', UButton);
 
 declare global {
   interface HTMLElementTagNameMap {
-    'fitness-button': FitnessButton;
+    'u-button': UButton;
   }
 }

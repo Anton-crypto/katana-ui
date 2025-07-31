@@ -125,10 +125,10 @@ export class UInput extends LitElement {
   }
 }
 
-customElements.define('fitness-input', FitnessInput);
+customElements.define('u-input', UInput);
 
 declare global {
   interface HTMLElementTagNameMap {
-    'fitness-input': FitnessInput;
+    'u-input': UInput;
   }
 }

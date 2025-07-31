@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UI Kit Demo</title>
+    <script type="module" src="../dist/ui-kit.js"></script>
+    <style>
+      :root {
+        --fitness-color-primary: #10B981;
+        --fitness-color-primary-light: #A7F3D0;
+        --fitness-color-secondary: #6b7280;
+        --fitness-color-error: #ef4444;
+        --fitness-color-border: #d1d5db;
+        --fitness-color-bg: #ffffff;
+        --fitness-color-text: #111827;
+        --fitness-color-helper: #4b5563;
+        --fitness-color-disabled-bg: #f3f4f6;
+      }
+
+      body {
+        padding: 40px;
+        font-family: -apple-system, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>UI Kit — Demo</h1>
+
+    <u-input
+      label="Имя"
+      name="name"
+      placeholder="Введите имя"
+      required
+      @input-changed="${(e) => console.log('Input:', e.detail.value)}"
+    ></u-input>
+
+    <u-input
+      label="Email"
+      type="email"
+      error="Введите корректный email"
+    ></u-input>
+
+    <div style="margin: 20px 0;">
+      <u-button variant="primary">Сохранить</u-button>
+      <u-button variant="danger" style="margin-left: 10px;">Удалить</u-button>
+      <u-button variant="outline" disabled style="margin-left: 10px;">Отмена</u-button>
+    </div>
+  </body>
+</html>
