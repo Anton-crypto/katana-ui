@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { property } from 'lit/decorators.js';
+import { property } from 'lit/decorators';
 
 export class KButton extends LitElement {
   @property({ type: String }) variant: 'primary' | 'secondary' | 'danger' | 'outline' = 'primary';
